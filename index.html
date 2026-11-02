@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Entre Páginas — Livraria e Papelaria</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="hd"><a class="lg" href="#home" id="logo"></a>
+<nav id="nv"><a href="#home">Início</a><a href="#livros">Livros</a><a href="#papelaria">Papelaria</a><a href="#ofertas">Ofertas</a><a href="#sobre">Sobre nós</a></nav>
+<button class="ic" aria-label="Pesquisar" onclick="$('#sb').classList.toggle('o');$('#q').focus()"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>Pesquisar</button>
+<a class="ic" href="#conta" aria-label="Minha conta"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 15-5 16 0"/></svg>Conta</a>
+<a class="ic" href="#carrinho" aria-label="Carrinho"><svg viewBox="0 0 24 24"><path d="M3 4h2l2 12h11l2-8H6"/><circle cx="9" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg><i id="cc">0</i>Carrinho</a></div>
+<form id="sb" onsubmit="event.preventDefault();F={q:$('#q').value,sub:'',au:'',max:'',sort:'rel'};go('busca')"><input id="q" type="search" placeholder="Buscar livros, autores ou papelaria…" aria-label="Buscar"><button class="b1">Buscar</button></form></header>
+<main id="app"></main>
+<footer><div class="w"><div class="fg" id="ft"></div><p style="text-align:center;font-size:13px;margin-top:28px;opacity:.7">© 2026 · Todos os direitos reservados · <a href="#admin">Área do lojista</a></p></div></footer>
+<script src="script.js"></script></body></html>
